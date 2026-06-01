@@ -1,0 +1,125 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #111;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* ===== HERO BOX (CENTER TOOL) ===== */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* ===== UPLOAD BOX (LIKE DRAG & DROP AREA) ===== */
+input[type="file"] {
+    width: 100%;
+    padding: 30px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* INPUTS */
+select, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* SMALL FOOTER TEXT */
+.small {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

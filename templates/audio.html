@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Converter - Python Tools</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+
+<nav class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white">
+                <i class="fas fa-tools"></i>
+            </div>
+            <span class="text-2xl font-bold">Python Tools</span>
+        </div>
+
+        <div class="flex items-center gap-8">
+            <a href="/">Home</a>
+            <a href="/image">Image</a>
+            <a href="/pdf">PDF</a>
+            <a href="/qr">QR</a>
+            <a href="/video">Video</a>
+            <a href="/audio" class="text-blue-600 font-medium border-b-2 border-blue-600 pb-1">Audio</a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="max-w-4xl mx-auto px-6 py-16">
+
+    <div class="text-center mb-12">
+        <div class="w-20 h-20 bg-green-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-music text-5xl text-green-600"></i>
+        </div>
+
+        <h1 class="text-5xl font-bold text-gray-900">
+            Video To MP3 Converter
+        </h1>
+
+        <p class="text-gray-600 mt-4 text-xl">
+            Convert any video into MP3 audio
+        </p>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-xl p-10">
+
+        <form action="/convert-audio"
+              method="POST"
+              enctype="multipart/form-data"
+              class="space-y-8">
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Upload Video
+                </label>
+
+                <input type="file"
+                       name="video"
+                       accept="video/*"
+                       required
+                       class="block w-full text-sm text-gray-500
+                       file:mr-4
+                       file:py-4
+                       file:px-6
+                       file:rounded-2xl
+                       file:border-0
+                       file:text-sm
+                       file:font-semibold
+                       file:bg-green-50
+                       file:text-green-700">
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 rounded-2xl text-lg transition">
+                Convert To MP3
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
