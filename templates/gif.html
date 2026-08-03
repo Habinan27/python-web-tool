@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video To GIF</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="max-w-4xl mx-auto px-6 py-16">
+
+        <div class="text-center mb-12">
+            <i class="fas fa-film text-6xl text-pink-600"></i>
+
+            <h1 class="text-5xl font-bold mt-4">
+                Video To GIF
+            </h1>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-10">
+
+            <form action="/video-to-gif" method="POST" enctype="multipart/form-data" class="space-y-6">
+
+                <input type="file" name="video" required class="w-full">
+
+                <button class="w-full bg-pink-600 text-white py-4 rounded-xl">
+                    Convert To GIF
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

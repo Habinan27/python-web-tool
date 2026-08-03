@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Trimmer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="max-w-4xl mx-auto px-6 py-16">
+
+        <div class="text-center mb-12">
+            <i class="fas fa-cut text-6xl text-orange-600"></i>
+            <h1 class="text-5xl font-bold mt-4">
+                Video Trimmer
+            </h1>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-10">
+
+            <form action="/trim-video" method="POST" enctype="multipart/form-data" class="space-y-6">
+
+                <input type="file" name="video" required class="w-full">
+
+                <input type="number" name="start" placeholder="Start Time (seconds)" required
+                    class="w-full border p-4 rounded-xl">
+
+                <input type="number" name="end" placeholder="End Time (seconds)" required
+                    class="w-full border p-4 rounded-xl">
+
+                <button class="w-full bg-orange-600 text-white py-4 rounded-xl">
+                    Trim Video
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
